@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multilingual Speech to English Translation</title>
+    <link rel="stylesheet" href="/static/styling.css">
+</head>
+<body>
+    <h1>Multilingual Speech to English</h1>
+
+    <!-- Text to Speech Section -->
+    <div id="tts-section">
+        <h2>Text to Speech</h2>
+        <textarea id="tts-text" placeholder="Enter text to convert to speech in English"></textarea>
+        <button id="tts-button">Convert to Speech</button>
+        <audio id="tts-audio" controls></audio>
+    </div>
+
+    <!-- Upload audio file Section -->
+    <div id="file-upload-section">
+        <h2>Upload Audio File</h2>
+        <input type="file" id="audio-file" accept="audio/*">
+        <button id="upload-file-btn">Upload & Translate to English</button>
+        <p id="file-upload-result"></p>
+    </div>
+
+    <!-- Record Audio Section -->
+    <div id="record-section">
+        <h2>Record and Translate</h2>
+        <button id="start-record-btn">Start Recording</button>
+        <button id="stop-record-btn" disabled>Stop Recording</button>
+        <p>Recording Time: <span id="timer">00:00</span></p>
+        <audio id="recorded-audio" controls></audio>
+        <p id="record-result"></p>
+    </div>
+
+    <script src="/static/jsfile.js"></script>
+</body>
+</html>

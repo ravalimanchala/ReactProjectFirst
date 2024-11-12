@@ -1,0 +1,63 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;  /* Light grey background */
+    color: #333;                 /* Dark grey text color */
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #111;  /* Slightly darker text for the header */
+}
+
+/* Input, Textarea, and Select Styling */
+textarea, input[type="file"], button, select {
+    display: block;
+    margin: 15px auto;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    color: #333;
+}
+
+textarea, select {
+    width: 80%;
+    background-color: #e0e0e0;  /* Light grey */
+    color: #111;                /* Darker text color */
+}
+
+input[type="file"] {
+    width: auto;
+}
+
+/* Button Styling */
+button {
+    background-color: #333;      /* Dark grey background */
+    color: #f4f4f4;              /* Light grey text */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s ease-in-out;
+}
+
+/* Button Hover and Active Effects */
+button:hover {
+    background-color: #555;      /* Darker grey on hover */
+}
+
+button:active {
+    transform: scale(0.95);      /* Shrink button slightly when clicked */
+}
+
+/* Timer and Audio Elements */
+audio {
+    margin-top: 10px;
+}
+
+#timer {
+    font-size: 18px;
+    color: #555;
+    font-weight: bold;
+}
